@@ -6,3 +6,4 @@ data/
 # 用户托管的站点内容
 public/*
 !public/.gitkeep
+claude.md
