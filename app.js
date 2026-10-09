@@ -48,6 +48,7 @@ app.use('/', require('./routes/auth'));
 app.use('/dashboard', require('./routes/dashboard'));
 app.use('/admin', require('./routes/admin'));
 app.use('/go', require('./routes/go'));
+app.use('/support', require('./routes/support'));
 app.use('/', require('./routes/site'));
 
 // 走到这里基本只剩根路径以外的空路径

@@ -879,6 +879,49 @@ input[type="file"] {
   }
 }
 
+/* ------------------------------------------------------------------ 赞赏支持 */
+
+.donate-note {
+  margin: 0 0 1rem;
+  color: var(--fg);
+  line-height: 1.75;
+  /* 说明文字是纯文本，换行原样保留（与 textarea 里的所见一致） */
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.donate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 220px));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.donate-item {
+  margin: 0;
+  padding: 0.7rem;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.donate-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  /* 二维码/收款码通常是白底，深色主题下别让它透出页面底色 */
+  background: #fff;
+}
+
+.donate-cap {
+  margin-top: 0.55rem;
+  font-size: 0.85rem;
+  color: var(--fg-muted);
+}
+
 /* ------------------------------------------------------------------ 响应式 */
 
 @media (max-width: 720px) {
